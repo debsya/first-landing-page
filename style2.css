@@ -2,39 +2,46 @@ body {
 	margin: 0;
 }
 
-.box {
-    padding:0;
-    margin:0;
-   /* cursor:pointer;*/
-    /*display:inline-block;*/
-    color:#FFF;
-    font-size:2em;
-    /*border-radius:4px;*/
-    /*border:1px solid #bbb;*/
-    /*transition: all 0.3s linear;*/
-}
-
 /*HEADER*/
-a.title {
-	font-family: 'PT Sans', sans-serif;
-  font-weight: 500; 
-  margin-left: 0;
-  margin-right: 0;
+div.navbar-brand.name {
+    font-size: 2.88vh;
+    margin-right: 25px;
 }
 
-b.btn{
-  margin-left: auto;
+a.navbar-brand.text {
+  font-size: 2.75vh;
+  margin-right: 10px;
 }
 
-a.btn-primary {
+a.navbar-brand.text:hover {
+  color: #edb418;
+}
+
+a.btn.btn-primary.but-nav {
+  font-size: 2.4vh;
+}
+
+a.btn-primary.but-nav {
 	background-color: #edb418;
   border-color: #edb418;
 }
 
-a.btn-primary:hover {
+a.btn-primary.but-nav:hover {
 	background-color: #edb418;
   border-color: #edb418;
   transform: scale(0.95);
+}
+
+@media (min-width: 576px) {
+  div.navbar-brand.name {
+    font-size: 3.5vh ;
+  }
+  a.navbar-brand.text {
+    font-size: 3vh;
+  }
+  a.btn.btn-primary.but-nav {
+    font-size: 2.5vh;
+  }
 }
 
 /*COVER*/
@@ -118,12 +125,7 @@ div.trait h3 {
 
 /*CONTENT*/
 .zone {
-  /*cursor:pointer;*/
-  /*display:inline-block;*/
   text-align: center;
-  /*border-radius:4px;*/
-  /*border:1px solid #bbb;*/
-  /*transition: all 0.3s linear;*/
 }
 
 .content .description {

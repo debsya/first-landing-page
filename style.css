@@ -1,18 +1,66 @@
 body,
 html {
   width: 100%;
-  height: 100%;
+  height: 90%;
   font-family: 'Montserrat', sans-serif;
   background: url(background.jpg) no-repeat center center fixed; 
   background-size: cover;
 }
 
+/*HEADER*/
+div.navbar-brand.name {
+    font-size: 2.88vh;
+    margin-right: 25px;
+}
 
+a.navbar-brand.text {
+	font-size: 2.75vh;
+	margin-right: 10px;
+}
+
+a.navbar-brand.text:hover {
+	color: #ff8133;
+}
+
+a.btn.btn-primary.but-nav {
+	font-size: 2.4vh;
+}
+
+a.btn-primary.but-nav {
+	background-color: #ff8133;
+	border-color: #ff8133;
+}
+
+a.btn-primary.but-nav:hover {
+	background-color: #ff8133;
+	border-color: #ff8133;
+	transform: scale(1.05);
+}
+
+@media (min-width: 576px) {
+	div.navbar-brand.name {
+		font-size: 3.5vh ;
+	}
+	a.navbar-brand.text {
+		font-size: 3vh;
+	}
+	a.btn.btn-primary.but-nav {
+		font-size: 2.5vh;
+	}
+}
+
+/*HOME*/
 h1{
-	font-size: 3rem;
+	font-size: 5.5vh;
 	color: white;
 	font-weight: 550;
 	padding-top: 40px;
+}
+
+@media (min-width: 576px) {
+	h1 {
+		font-size: 7.5vh;
+	}
 }
 
 hr {
@@ -22,26 +70,26 @@ hr {
 }
 
 .buffer{
-	height: 27vh;
+	height: 20vh;
 }
 
-.btn {
+a.btn.content {
 	font-weight: 700;
 	border-radius: 300px;
 	text-transform: uppercase;
 }
 
-a.btn-primary {
+a.btn.btn-primary.content {
 	background-color: #ff8133;
 	border-color: #ff8133;
 }
 
-a.btn-primary:hover {
+a.btn.btn-primary.content:hover {
 	background-color: #ff8133;
 	border-color: #ff8133;
 	border-width: 4px;
 }
 
-.btn-xl {
+a.btn.btn-primary.btn-xl.content {
 	padding: 1rem 2rem;
 }
